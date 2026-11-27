@@ -29,13 +29,6 @@
         <main class="profile-page">
             <!-- Profile -->
             <header class="profile">
-                <img
-                    class="profile__image"
-                    src="./assets/images/profile/profile-picture.png"
-                    alt="Julián Morales sonríe con un sombrero de campo rodeado de cultivos"
-                    width="1254"
-                    height="1254"
-                >
                 <h1 class="profile__name">El Campo con Don Julián</h1>
                 <p class="profile__author">Julián Morales</p>
                 <p class="profile__bio">
@@ -52,8 +45,8 @@
                     <li class="links__item">
                         <a class="links__link" href="#">
                             <img
-                                class="links__icon"
-                                src="./assets/icons/tiktok.svg"
+                                class="links__icon links__icon--tiktok"
+                                src="./assets/icons/tiktok-color.svg"
                                 alt="TikTok"
                                 width="24"
                                 height="24"
@@ -71,8 +64,8 @@
                     <li class="links__item">
                         <a class="links__link" href="#">
                             <img
-                                class="links__icon"
-                                src="./assets/icons/instagram.svg"
+                                class="links__icon links__icon--instagram"
+                                src="./assets/icons/instagram-color.svg"
                                 alt="Instagram"
                                 width="24"
                                 height="24"
@@ -90,8 +83,8 @@
                     <li class="links__item">
                         <a class="links__link" href="#">
                             <img
-                                class="links__icon"
-                                src="./assets/icons/youtube.svg"
+                                class="links__icon links__icon--youtube"
+                                src="./assets/icons/youtube-color.svg"
                                 alt="YouTube"
                                 width="24"
                                 height="24"
@@ -109,8 +102,8 @@
                     <li class="links__item">
                         <a class="links__link" href="#">
                             <img
-                                class="links__icon"
-                                src="./assets/icons/facebook.svg"
+                                class="links__icon links__icon--facebook"
+                                src="./assets/icons/facebook-color.svg"
                                 alt="Facebook"
                                 width="24"
                                 height="24"
@@ -126,10 +119,14 @@
                         </a>
                     </li>
                     <li class="links__item">
-                        <a class="links__link" href="#">
+                        <a
+                            class="links__link links__link--primary"
+                            href="#"
+                            aria-label="Abrir WhatsApp para preguntar"
+                        >
                             <img
-                                class="links__icon"
-                                src="./assets/icons/whatsapp.svg"
+                                class="links__icon links__icon--whatsapp"
+                                src="./assets/icons/whatsapp-color.svg"
                                 alt="WhatsApp"
                                 width="24"
                                 height="24"
@@ -147,8 +144,8 @@
                     <li class="links__item">
                         <a class="links__link" href="#">
                             <img
-                                class="links__icon"
-                                src="./assets/icons/envelope.svg"
+                                class="links__icon links__icon--envelope"
+                                src="./assets/icons/envelope-color.svg"
                                 alt="Correo electrónico"
                                 width="24"
                                 height="24"
@@ -165,6 +162,126 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Resources -->
+            <section class="resources" aria-labelledby="resources-title">
+                <div class="resources__header">
+                    <h2 class="resources__title" id="resources-title">Recursos del campo</h2>
+                    <p class="resources__description">
+                        Guías breves para comenzar, aprender y cuidar tus cultivos.
+                    </p>
+                </div>
+
+                <div class="resources__grid">
+                    <article class="resource-card">
+                        <div class="resource-card__link">
+                            <video
+                                class="resource-card__image"
+                                poster="./assets/images/covers/como-preparar-un-pequeño-terreno.png"
+                                preload="metadata"
+                                controls
+                                width="1672"
+                                height="941"
+                            >
+                                <source src="./assets/videos/temp.webm" type="video/webm">
+                                <source src="./assets/videos/temp.mp4" type="video/mp4">
+                                Tu navegador no puede reproducir este vídeo.
+                            </video>
+                            <h3 class="resource-card__title">Cómo preparar un pequeño terreno</h3>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-card__link">
+                            <video
+                                class="resource-card__image"
+                                poster="./assets/images/covers/errores-que-Mejoran-tus-cultivos.png"
+                                preload="metadata"
+                                controls
+                                width="1672"
+                                height="941"
+                            >
+                                <source src="./assets/videos/temp.webm" type="video/webm">
+                                <source src="./assets/videos/temp.mp4" type="video/mp4">
+                                Tu navegador no puede reproducir este vídeo.
+                            </video>
+                            <h3 class="resource-card__title">Errores que enseñan a mejorar tus cultivos</h3>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-card__link">
+                            <video
+                                class="resource-card__image"
+                                poster="./assets/images/covers/herramientas-y-cuidados-iniciales-de-plantas.png"
+                                preload="metadata"
+                                controls
+                                width="1672"
+                                height="941"
+                            >
+                                <source src="./assets/videos/temp.webm" type="video/webm">
+                                <source src="./assets/videos/temp.mp4" type="video/mp4">
+                                Tu navegador no puede reproducir este vídeo.
+                            </video>
+                            <h3 class="resource-card__title">Herramientas básicas y cuidados iniciales</h3>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-card__link">
+                            <video
+                                class="resource-card__image"
+                                poster="./assets/images/covers/tecnologia-para-una-agricultura-inteligente.png"
+                                preload="metadata"
+                                controls
+                                width="1671"
+                                height="941"
+                            >
+                                <source src="./assets/videos/temp.webm" type="video/webm">
+                                <source src="./assets/videos/temp.mp4" type="video/mp4">
+                                Tu navegador no puede reproducir este vídeo.
+                            </video>
+                            <h3 class="resource-card__title">Tecnología para una agricultura inteligente</h3>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-card__link">
+                            <video
+                                class="resource-card__image"
+                                poster="./assets/images/covers/un-dia-de-trabajo-en-la-granja.png"
+                                preload="metadata"
+                                controls
+                                width="1672"
+                                height="941"
+                            >
+                                <source src="./assets/videos/temp.webm" type="video/webm">
+                                <source src="./assets/videos/temp.mp4" type="video/mp4">
+                                Tu navegador no puede reproducir este vídeo.
+                            </video>
+                            <h3 class="resource-card__title">Un día de trabajo en la granja</h3>
+                        </div>
+                    </article>
+
+                    <article class="resource-card resource-card--ebook">
+                        <a class="resource-card__link" href="#">
+                            <img
+                                class="resource-card__image"
+                                src="./assets/images/ebook/guia-practica-para-cultivar-con-tus-manos.png"
+                                alt="Portada del e-book Mi primer cultivo"
+                                width="1143"
+                                height="1376"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                            <h3 class="resource-card__title">Mi primer cultivo</h3>
+                            <p class="resource-card__description">
+                                Guía introductoria con recomendaciones generales.
+                            </p>
+                        </a>
+                    </article>
+                </div>
+            </section>
         </main>
     </body>
 </html>
